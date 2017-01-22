@@ -1,0 +1,13 @@
+public class ApluseB{
+  public int aplusb(int a, int b) {
+    // write your code here, try to do it without arithmetic operators.
+    while(b!=0){
+        int carry;
+        carry = a & b;
+        a = a ^ b;
+        b = carry << 1;
+    }
+    return a;
+
+  }
+};
