@@ -1,0 +1,34 @@
+//Given two integers a and b, an operator, choices:
+//+, -, *, /
+//Calculate a <operator> b.
+// Notice
+//Use switch grammar to solve it
+
+
+public class Calculator {
+    /**
+      * @param a, b: Two integers.
+      * @param operator: A character, +, -, *, /.
+      */
+    public int calculate(int a, char operator, int b) {
+        int result = 0; 
+        switch(operator){
+            case '+': 
+                result = a + b;
+                break;
+            case '-':
+                result = a - b;
+                break;
+            case '*':
+                result = a * b;
+                break;
+            case '/':
+                result = a / b;
+                break;
+            default:
+                System.out.println("Please enter the operator : +, -, * , /");
+        
+        }
+        return result;
+        
+   
